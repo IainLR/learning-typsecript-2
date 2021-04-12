@@ -35,6 +35,7 @@ const todaysWeather = {
   weather: 'sunny',
 }
 
+// destructuring example
 const logWeather = ({
   date,
   weather,
