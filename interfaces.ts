@@ -43,3 +43,7 @@ const printSummary = (item: Reportable): void => {
 
 printSummary(oldCivic)
 printSummary(drinkTwo)
+
+// interfaces frequently used to restrict access to certain functions
+// an object must satisfy the requirments of an interface in order to use a given function
+// the more generalized the interface, the more reusable it becomes
