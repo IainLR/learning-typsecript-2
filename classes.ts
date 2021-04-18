@@ -1,4 +1,11 @@
 class Vehicle {
+  //   color: string
+
+  //   constructor(color: string) {
+  //     this.color = color
+  //   }
+  constructor(public color: string) {}
+
   public drive(): void {
     console.log('vrooom')
   }
@@ -8,7 +15,16 @@ class Vehicle {
   }
 }
 
+const vehicle = new Vehicle('orange')
+console.log(vehicle.color)
+
+//super() is used to call the constructor of the parent class
+
 class Car extends Vehicle {
+  constructor(public wheels: number, color: string) {
+    super(color)
+  }
+
   drive(): void {
     console.log('new vroom')
   }
@@ -23,7 +39,7 @@ class Car extends Vehicle {
 // vehicle.drive()
 // vehicle.honk()
 
-const car = new Car()
+const car = new Car(4, 'blue')
 car.startDrivingProcess()
 // car.honk()
 
